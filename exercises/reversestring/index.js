@@ -7,13 +7,9 @@
 //   reverse('Greetings!') === '!sgniteerG'
 
 function reverse(str) {
-	let revStr;
+	let revStr = '';
 	for (let i of str) {
-		if (!revStr) {
-			revStr = i;
-		} else {
-			revStr = i + revStr;
-		}
+		revStr = i + revStr;
 	}
 	return revStr;
 }
